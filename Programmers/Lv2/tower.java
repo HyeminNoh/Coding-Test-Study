@@ -14,7 +14,6 @@ class Solution {
             }
         }
         index.add(0);
-        System.out.println(index);
         Collections.reverse(index);
         int[] answer = new int[index.size()];
         for(int v=0; v<index.size(); v++){
