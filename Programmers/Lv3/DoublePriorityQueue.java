@@ -30,3 +30,12 @@ class Solution {
         return answer;
     }
 }
+
+public class DoublePriorityQueue{
+    public static void main(String args[]){
+        Solution s = new Solution();
+        String[] test = {"I 16","D 1"};
+        s.solution(test);
+        //test answer is [0,0]
+    }
+}
