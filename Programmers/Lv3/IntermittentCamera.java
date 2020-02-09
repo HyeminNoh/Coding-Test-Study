@@ -2,13 +2,16 @@ import java.util.*;
 class Solution {
     public int solution(int[][] routes) {
         Arrays.sort(routes, new Comparator<int[]>() {
-			public int compare(int[] arr1, int[] arr2) {
-				if( ((Comparable)arr1[0]).compareTo(arr2[0]) > 0 )
-					return 1;
-				else
-					return -1;
-			}
-		});
+            public int compare(int[] arr1, int[] arr2) {
+                if( ((Comparable)arr1[0]).compareTo(arr2[0]) > 0 ){
+                    return 1;
+                }
+				else{
+                    return -1;
+                }
+            }
+        });
+        
         int[] pre_car = routes[0];
         int cam = 1;
         for(int i=1; i<routes.length; i++){
