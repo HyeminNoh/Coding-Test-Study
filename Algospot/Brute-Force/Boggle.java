@@ -26,8 +26,8 @@ public class Boggle{
     }
 
     public static void main(String[]args){
-        BufferReader br = new BufferReader(new InputStreamReader(System.in));
-        BufferReader bw = new BufferWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int testCase = Integer.parseInt(br.readLine());
         while(testCase-->0){
