@@ -16,7 +16,7 @@ class Solution {
             }
             map[0][k]=status;
         }
-        //(m,n)
+        //(m,0)
         status = 1;
         for(int l=1; l<m; l++){
             if(map[l][0]==-1){
