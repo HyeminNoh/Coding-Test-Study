@@ -38,3 +38,41 @@ class Solution {
         return answer;
     }
 }
+//통과 코드
+class Solution2{
+    public int solution(int[] budgets, int M) {
+        int answer = 0;
+        int left = 0;
+        int right = 0;
+        for (int budget : budgets) {
+            if (budget > right) {
+                right = budget;
+            }
+        }
+
+        int middle = 0;
+        while (left <= right) {
+            long sum = 0;
+            middle = (left + right) / 2;
+
+            for (int budget : budgets) {
+                if (budget >= middle) {
+                    sum += middle;
+                }
+                else {
+                    sum += budget;
+                }
+            }
+
+            if (sum > M) {
+                right = middle - 1;
+            }
+            else {
+                answer = middle;
+                left = middle + 1;
+            }
+        }
+
+        return answer;
+    }
+}
