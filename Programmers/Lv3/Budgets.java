@@ -38,7 +38,7 @@ class Solution {
         return answer;
     }
 }
-//통과 코드
+//통과 코
 class Solution2{
     public int solution(int[] budgets, int M) {
         int answer = 0;
